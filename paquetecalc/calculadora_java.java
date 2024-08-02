@@ -50,6 +50,8 @@ public class calculadora_java extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         Manual_usuario = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        nuevo = new javax.swing.JMenuItem();
+        historial = new javax.swing.JMenuItem();
         ayuda = new javax.swing.JMenu();
         manualusuario = new javax.swing.JMenuItem();
 
@@ -271,7 +273,7 @@ public class calculadora_java extends javax.swing.JFrame {
                                 .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(623, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         calculadoraLayout.setVerticalGroup(
             calculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -315,6 +317,15 @@ public class calculadora_java extends javax.swing.JFrame {
         jToolBar1.add(calculadora);
 
         jMenu1.setText("Opciones");
+
+        nuevo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        nuevo.setText("Nuevo");
+        jMenu1.add(nuevo);
+
+        historial.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        historial.setText("Historial");
+        jMenu1.add(historial);
+
         Manual_usuario.add(jMenu1);
 
         ayuda.setText("Ayuda");
@@ -348,9 +359,10 @@ public class calculadora_java extends javax.swing.JFrame {
 
     private void manualusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manualusuarioActionPerformed
 //Manual de usuario 
-Manualusuario verventana = new Manualusuario();
-calculadora.add(verventana);
-verventana.show();
+//Manualusuario verventana = new Manualusuario();
+//calculadora.add(verventana);
+//verventana.show();
+
 
 
     }//GEN-LAST:event_manualusuarioActionPerformed
@@ -497,6 +509,7 @@ verventana.show();
     private javax.swing.JMenuBar Manual_usuario;
     private javax.swing.JMenu ayuda;
     private javax.swing.JPanel calculadora;
+    private javax.swing.JMenuItem historial;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
@@ -518,5 +531,6 @@ verventana.show();
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JLabel lbl_numero;
     private javax.swing.JMenuItem manualusuario;
+    private javax.swing.JMenuItem nuevo;
     // End of variables declaration//GEN-END:variables
 }
